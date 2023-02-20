@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://theconsciouspasticcio.github.io/posts/mypost/</loc>
-    <lastmod>2023-02-20T17:17:22+01:00</lastmod>
+    <loc>https://theconsciouspasticcio.github.io/posts/org-mode/</loc>
+    <lastmod>2023-02-20T17:33:50+01:00</lastmod>
   </url><url>
     <loc>https://theconsciouspasticcio.github.io/posts/</loc>
-    <lastmod>2023-02-20T17:17:22+01:00</lastmod>
+    <lastmod>2023-02-20T17:33:50+01:00</lastmod>
   </url><url>
     <loc>https://theconsciouspasticcio.github.io/</loc>
+    <lastmod>2023-02-20T17:33:50+01:00</lastmod>
+  </url><url>
+    <loc>https://theconsciouspasticcio.github.io/posts/mypost/</loc>
     <lastmod>2023-02-20T17:17:22+01:00</lastmod>
   </url><url>
     <loc>https://theconsciouspasticcio.github.io/categories/</loc>

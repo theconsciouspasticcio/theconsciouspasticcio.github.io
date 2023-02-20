@@ -6,14 +6,23 @@
     <description>Recent content on The Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Feb 2023 17:17:22 +0100</lastBuildDate><atom:link href="https://theconsciouspasticcio.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Feb 2023 17:33:50 +0100</lastBuildDate><atom:link href="https://theconsciouspasticcio.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mypost</title>
+      <title>Org Mode</title>
+      <link>https://theconsciouspasticcio.github.io/posts/org-mode/</link>
+      <pubDate>Mon, 20 Feb 2023 17:33:50 +0100</pubDate>
+      
+      <guid>https://theconsciouspasticcio.github.io/posts/org-mode/</guid>
+      <description>test for org files</description>
+    </item>
+    
+    <item>
+      <title>My first post</title>
       <link>https://theconsciouspasticcio.github.io/posts/mypost/</link>
       <pubDate>Mon, 20 Feb 2023 17:17:22 +0100</pubDate>
       
       <guid>https://theconsciouspasticcio.github.io/posts/mypost/</guid>
-      <description>maronne third is the charm</description>
+      <description>maronne</description>
     </item>
     
   </channel>
