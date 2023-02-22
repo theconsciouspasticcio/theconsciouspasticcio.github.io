@@ -6,7 +6,16 @@
     <description>Recent content on The Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Feb 2023 17:33:50 +0100</lastBuildDate><atom:link href="https://theconsciouspasticcio.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Feb 2023 18:31:42 +0100</lastBuildDate><atom:link href="https://theconsciouspasticcio.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Latex Test</title>
+      <link>https://theconsciouspasticcio.github.io/posts/latex-test/</link>
+      <pubDate>Wed, 22 Feb 2023 18:31:42 +0100</pubDate>
+      
+      <guid>https://theconsciouspasticcio.github.io/posts/latex-test/</guid>
+      <description>$$ X \longrightarrow Y \longrightarrow Z $$</description>
+    </item>
+    
     <item>
       <title>Org Mode</title>
       <link>https://theconsciouspasticcio.github.io/posts/org-mode/</link>
