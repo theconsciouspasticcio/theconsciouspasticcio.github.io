@@ -14,8 +14,12 @@
       
       <guid>https://theconsciouspasticcio.github.io/posts/tests/test-ox-hugo/</guid>
       <description>THIS IS JUST A DRILL, DON&amp;rsquo;t FkING PANIC
-Test Latex \[ X \longrightarrow Y \longrightarrow Z \]
-Test quote “A thousand years ago five minutes were Equal to forty ounces of fine sand. Outstare the stars. Infinite foretime and Infinite aftertime: above your head They close like giant wings, and you are dead.”
+Test quote “A thousand years ago five minutes were
+Equal to forty ounces of fine sand.
+Outstare the stars. Infinite foretime and
+Infinite aftertime: above your head
+They close like giant wings, and you are dead.”
+Test Latex \[X \longrightarrow Y \longrightarrow Z \]
 Test img </description>
     </item>
     
