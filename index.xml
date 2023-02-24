@@ -6,34 +6,17 @@
     <description>Recent content on The Conscious Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Feb 2023 18:31:42 +0100</lastBuildDate><atom:link href="https://theconsciouspasticcio.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Feb 2023 16:39:00 +0100</lastBuildDate><atom:link href="https://theconsciouspasticcio.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Latex Test</title>
-      <link>https://theconsciouspasticcio.github.io/posts/latex-test/</link>
-      <pubDate>Wed, 22 Feb 2023 18:31:42 +0100</pubDate>
+      <title>test ox-hugo</title>
+      <link>https://theconsciouspasticcio.github.io/posts/tests/test-ox-hugo/</link>
+      <pubDate>Fri, 24 Feb 2023 16:39:00 +0100</pubDate>
       
-      <guid>https://theconsciouspasticcio.github.io/posts/latex-test/</guid>
-      <description>Test Latex $$ X \longrightarrow Y \longrightarrow Z $$
+      <guid>https://theconsciouspasticcio.github.io/posts/tests/test-ox-hugo/</guid>
+      <description>THIS IS JUST A DRILL, DON&amp;rsquo;t FkING PANIC
+Test Latex \[ X \longrightarrow Y \longrightarrow Z \]
 Test quote “A thousand years ago five minutes were Equal to forty ounces of fine sand. Outstare the stars. Infinite foretime and Infinite aftertime: above your head They close like giant wings, and you are dead.”
-Test img Three body problem</description>
-    </item>
-    
-    <item>
-      <title>Org Mode</title>
-      <link>https://theconsciouspasticcio.github.io/posts/org-mode/</link>
-      <pubDate>Mon, 20 Feb 2023 17:33:50 +0100</pubDate>
-      
-      <guid>https://theconsciouspasticcio.github.io/posts/org-mode/</guid>
-      <description>test for org files</description>
-    </item>
-    
-    <item>
-      <title>My first post</title>
-      <link>https://theconsciouspasticcio.github.io/posts/mypost/</link>
-      <pubDate>Mon, 20 Feb 2023 17:17:22 +0100</pubDate>
-      
-      <guid>https://theconsciouspasticcio.github.io/posts/mypost/</guid>
-      <description>maronne</description>
+Test img </description>
     </item>
     
   </channel>

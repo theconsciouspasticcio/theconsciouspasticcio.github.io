@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on The Conscious Blog</title>
-    <link>https://theconsciouspasticcio.github.io/posts/</link>
-    <description>Recent content in Posts on The Conscious Blog</description>
+    <title>blog on The Conscious Blog</title>
+    <link>https://theconsciouspasticcio.github.io/tags/blog/</link>
+    <description>Recent content in blog on The Conscious Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Feb 2023 16:39:00 +0100</lastBuildDate><atom:link href="https://theconsciouspasticcio.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Feb 2023 16:39:00 +0100</lastBuildDate><atom:link href="https://theconsciouspasticcio.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>test ox-hugo</title>
       <link>https://theconsciouspasticcio.github.io/posts/tests/test-ox-hugo/</link>
