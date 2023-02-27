@@ -13,14 +13,12 @@
       <pubDate>Fri, 24 Feb 2023 16:39:00 +0100</pubDate>
       
       <guid>https://theconsciouspasticcio.github.io/posts/tests/test-ox-hugo/</guid>
-      <description>THIS IS JUST A DRILL, DON&amp;rsquo;t FkING PANIC
-Test quote “A thousand years ago five minutes were
-Equal to forty ounces of fine sand.
-Outstare the stars. Infinite foretime and
-Infinite aftertime: above your head
-They close like giant wings, and you are dead.”
-Test Latex \[X \longrightarrow Y \longrightarrow Z \]
-Test img </description>
+      <description>NoMo, please NoMo. cit. Blood Diamonds
+Test quote No line breaks, why?
+A thousand years ago five minutes were Equal to forty ounces of fine sand. Outstare the stars. Infinite foretime and Infinite aftertime: above your head They close like giant wings, and you are dead.
+Also verse doesn&amp;rsquo;t work
+Test Latex Example inline \(x^2=-1\) equations, \[X \longrightarrow Y \longrightarrow Z \]
+No latex environments test bullet lists sub item sub sub item Test img Figure 1: three body problem</description>
     </item>
     
   </channel>
