@@ -13,7 +13,9 @@
       <link>https://theconsciouspasticcio.github.io/hugo-about/</link>
       <pubDate>Thu, 09 Mar 2023 06:38:00 +0100</pubDate>
       <guid>https://theconsciouspasticcio.github.io/hugo-about/</guid>
-      <description>The Brain—is wider than the Sky—
+      <description>You weren&amp;rsquo;t invited, yet here we are.
+This isn&amp;rsquo;t meant for you to read.
+The Brain—is wider than the Sky—
 For—put them side by side—
 The one the other will contain
 With ease—and You—beside—
@@ -23,10 +25,14 @@ The one the other will absorb—
 As Sponges—Buckets—do—
 The Brain is just the weight of God—
 For—Heft them—Pound for Pound—
-And they will differ—if they do—
-As Syllable from Sound—
-— Emily Dickinson</description>
-      <content:encoded><![CDATA[<blockquote>
+And they will differ—if they do—</description>
+      <content:encoded><![CDATA[<div class="alert-warning alert">
+<div class="alert-heading">
+<p><em>You weren&rsquo;t invited, yet here we are.</em></p>
+</div>
+<p>This isn&rsquo;t meant for you to read.</p>
+</div>
+<blockquote>
 <div class="verse">
 <p>The Brain—is wider than the Sky—<br />
 For—put them side by side—<br />
