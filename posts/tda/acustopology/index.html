@@ -1,0 +1,342 @@
+<!doctype html><html lang=en dir=auto><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="noindex, nofollow"><title>Topological Audio Analysis | The Conscious Pasticcio</title>
+<meta name=keywords content="blog,exposition"><meta name=description content="[Epistemic status:] the closure of this post is not compact
+This is hard to explain, at least from an epistemological point of view. Lets say I needed an excuse to dig deeper into a subject that bugged me for the last five months.
+Topological Data Analysis (TDA), as I&rsquo;ve come to understand it, is the belief that data can hold some internal geometric structure that can be exploited through topologist-single-blade-swiss-army-knife homology."><meta name=author content="asbestos"><link rel=canonical href=http://localhost:1313/posts/tda/acustopology/><link crossorigin=anonymous href=/assets/css/stylesheet.min.a8b269c38e852a9960fef47c4ae803c24c8bb99ec68f20a4bfae9ca45daac331.css integrity="sha256-qLJpw46FKplg/vR8SugDwkyLuZ7GjyCkv66cpF2qwzE=" rel="preload stylesheet" as=style><link rel=icon href=http://localhost:1313/favicon.ico><link rel=apple-touch-icon href=http://localhost:1313/apple-touch-icon.png><link rel=alternate hreflang=en href=http://localhost:1313/posts/tda/acustopology/><meta name=twitter:title content="Topological Audio Analysis | The Conscious Pasticcio"><meta name=twitter:description content="[Epistemic status:] the closure of this post is not compact
+This is hard to explain, at least from an epistemological point of view. Lets say I needed an excuse to dig deeper into a subject that bugged me for the last five months.
+Topological Data Analysis (TDA), as I&rsquo;ve come to understand it, is the belief that data can hold some internal geometric structure that can be exploited through topologist-single-blade-swiss-army-knife homology."><meta property="og:title" content="Topological Audio Analysis | The Conscious Pasticcio"><meta property="og:description" content="[Epistemic status:] the closure of this post is not compact
+This is hard to explain, at least from an epistemological point of view. Lets say I needed an excuse to dig deeper into a subject that bugged me for the last five months.
+Topological Data Analysis (TDA), as I&rsquo;ve come to understand it, is the belief that data can hold some internal geometric structure that can be exploited through topologist-single-blade-swiss-army-knife homology."><meta property="og:type" content="article"><meta property="og:url" content="http://localhost:1313/posts/tda/acustopology/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-05-01T09:36:24+02:00"><meta property="article:modified_time" content="2024-05-01T09:36:24+02:00"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"http://localhost:1313/posts/"},{"@type":"ListItem","position":2,"name":"Topological Audio Analysis","item":"http://localhost:1313/posts/tda/acustopology/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Topological Audio Analysis | The Conscious Pasticcio","name":"Topological Audio Analysis","description":"[Epistemic status:] the closure of this post is not compact\nThis is hard to explain, at least from an epistemological point of view. Lets say I needed an excuse to dig deeper into a subject that bugged me for the last five months.\nTopological Data Analysis (TDA), as I\u0026rsquo;ve come to understand it, is the belief that data can hold some internal geometric structure that can be exploited through topologist-single-blade-swiss-army-knife homology.","keywords":["blog","exposition"],"wordCount":"1717","inLanguage":"en","datePublished":"2024-05-01T09:36:24+02:00","dateModified":"2024-05-01T09:36:24+02:00","author":[{"@type":"Person","name":"asbestos"}],"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:1313/posts/tda/acustopology/"},"publisher":{"@type":"Organization","name":"The Conscious Pasticcio","logo":{"@type":"ImageObject","url":"http://localhost:1313/favicon.ico"}}}</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css integrity=sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js integrity=sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4 crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js integrity=sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa crossorigin=anonymous onload=renderMathInElement(document.body)></script><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript></head><body class="dark type-posts kind-page layout-" id=top><script data-no-instant>function switchTheme(e){switch(e){case"light":document.body.classList.remove("dark");break;case"dark":document.body.classList.add("dark");break;default:window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")}}function isDarkTheme(){return document.body.className.includes("dark")}function getPrefTheme(){return localStorage.getItem("pref-theme")}function setPrefTheme(e){switchTheme(e),localStorage.setItem("pref-theme",e)}const toggleThemeCallbacks={};toggleThemeCallbacks.main=e=>{setPrefTheme(e?"light":"dark")},window.addEventListener("toggle-theme",function(){const e=isDarkTheme();for(const t in toggleThemeCallbacks)toggleThemeCallbacks[t](e)});function toggleThemeListener(){window.dispatchEvent(new CustomEvent("toggle-theme"))}</script><script>(function(){const t="dark",e=getPrefTheme(),n=e||t;switchTheme(n)})()</script><header class=header><nav class=nav><div class=logo><a href=http://localhost:1313/ accesskey=h title="The Conscious Pasticcio (Alt + H)">The Conscious Pasticcio</a>
+<span class=logo-switches></span></div><ul id=menu><li><a href=http://localhost:1313/hugo-about/ title=About>About</a></li><li><a href=http://localhost:1313/posts/ title=Posts class=active>Posts</a></li></ul></nav></header><main class="main post"><article class=post-single><header class=post-header><div class=breadcrumbs><a href=http://localhost:1313/>Home</a>&nbsp;»&nbsp;<a href=http://localhost:1313/posts/>Posts</a></div><h1 class=post-title>Topological Audio Analysis</h1><div class=post-meta><span class=meta-item><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select:text"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select:text"/><line x1="16" y1="2" x2="16" y2="6" style="user-select:text"/><line x1="8" y1="2" x2="8" y2="6" style="user-select:text"/><line x1="3" y1="10" x2="21" y2="10" style="user-select:text"/></svg>
+<span>May 1, 2024</span></span><span class=meta-item>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon" style="user-select:text"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z" style="user-select:text"/><line x1="7" y1="7" x2="7" y2="7" style="user-select:text"/></svg>
+<span class=post-tags><a href=http://localhost:1313/tags/blog/>Blog</a><a href=http://localhost:1313/tags/exposition/>Exposition</a></span></span><span class=meta-item>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text" style="user-select:text"><path d="M14 2H6A2 2 0 004 4v16a2 2 0 002 2h12a2 2 0 002-2V8z" style="user-select:text"/><polyline points="14 2 14 8 20 8" style="user-select:text"/><line x1="16" y1="13" x2="8" y2="13" style="user-select:text"/><line x1="16" y1="17" x2="8" y2="17" style="user-select:text"/><polyline points="10 9 9 9 8 9" style="user-select:text"/></svg>
+<span>1717 words</span></span><span class=meta-item>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentcolor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<span>9 min</span></span></div></header><div class="toc side left"><details><summary accesskey=c title="(Alt + C)"><span class=details>Table of Contents</span></summary><div class=inner><ul><li><a href=#the-rough-idea aria-label="The rough idea">The rough idea</a></li><li><a href=#regardlessly-i-wrote-it-anyway-dot aria-label="Regardlessly, I wrote it anyway."><strong>Regardlessly, I wrote it anyway.</strong></a><ul><li><a href=#first-of-all-how-the-heck-tda-works aria-label="First of all, how the heck TDA works?">First of all, how the heck TDA works?</a><ul><li><a href=#vietoris-rips aria-label=Vietoris-Rips>Vietoris-Rips</a></li></ul></li><li><a href=#three-stages aria-label="Three Stages">Three Stages</a><ul><li><a href=#from-music-to-image aria-label="From Music to Image">From Music to Image</a></li><li><a href=#from-image-to-data aria-label="From Image to DATA">From Image to DATA</a></li><li><a href=#from-data-to-topology aria-label="From DATA to Topology">From DATA to Topology</a></li></ul></li></ul></li><li><a href=#faq aria-label=FAQ><strong>FAQ</strong></a><ul><li><a href=#why-does-the-spectrogram-of-an-audio-file-capture-its-essence aria-label="Why does the spectrogram of an audio file capture its essence?">Why does the spectrogram of an audio file capture its essence?</a><ul><li><a href=#wait-but-what-are-spectrograms aria-label="Wait, but what are spectrograms?">Wait, but what are spectrograms?</a></li></ul></li><li><a href=#euclidean-distance-doesn-t-capture-any-musical-information aria-label="Euclidean distance doesn&amp;rsquo;t capture any &amp;ldquo;musical&amp;rdquo; information">Euclidean distance doesn&rsquo;t capture any &ldquo;musical&rdquo; information</a></li><li><a href=#what-does-the-information-about-this-topology-tells-about-the-audio aria-label="What does the information about this &amp;ldquo;topology&amp;rdquo; tells about the audio">What does the information about this &ldquo;topology&rdquo; tells about the audio</a></li><li><a href=#given-that-the-output-is-mathematically-meaningful-can-you-recover-the-topological-space-from-the-persistent-barcodes aria-label="Given that the output is mathematically meaningful, can you recover the topological space from the persistent barcodes?">Given that the output is mathematically meaningful, can you recover the topological space from the persistent barcodes?</a></li><li><a href=#have-somebody-else-already-done-it aria-label="Have somebody else already done it?">Have somebody else already done it?</a></li></ul></li></ul></div></details></div><div class=post-content><div class="alert-warning alert"><div class=alert-heading><p>[Epistemic status:] the closure of this post is not compact</p></div></div><p>This is hard to explain, at least from an epistemological point of view. Lets say I needed an excuse to dig deeper into a subject that bugged me for the last five months.</p><p>Topological Data Analysis (TDA), as I&rsquo;ve come to understand it, is the belief that data can hold some internal geometric structure that can be exploited through topologist-single-blade-swiss-army-knife homology.</p><p>Don&rsquo;t blame me for the following rant, blame yourself.</p><h2 id=the-rough-idea>The rough idea<a hidden class=anchor aria-hidden=true href=#the-rough-idea>¶</a></h2><p>So the idea is straightforward:</p><ol><li>Take any audio file; convert it into its spectrogram.</li><li>Take the spectrogram and convert it into a point cloud.</li><li>Take the point cloud and compute its Vietoris-Rips complex.</li></ol><p>There are several flows already.</p><p>Here is a list of self-directed objections: <a href=#faq><strong>FAQ</strong></a></p><h2 id=regardlessly-i-wrote-it-anyway-dot><strong>Regardlessly, I wrote it anyway.</strong><a hidden class=anchor aria-hidden=true href=#regardlessly-i-wrote-it-anyway-dot>¶</a></h2><p>Sit tight.</p><h3 id=first-of-all-how-the-heck-tda-works>First of all, how the heck TDA works?<a hidden class=anchor aria-hidden=true href=#first-of-all-how-the-heck-tda-works>¶</a></h3><p>Nice and simple. You have your favorite <a href=/ox-hugo/pointcloud.png>point cloud</a>, right?</p><p>Then all you need to do is to grow (hyper-)spheres around them. This is, of course, tailored to the dimensionality of your dataset and the distance you impose on the surrounding space.</p><h4 id=vietoris-rips>Vietoris-Rips<a hidden class=anchor aria-hidden=true href=#vietoris-rips>¶</a></h4><p>Now &mdash; hold on.</p><blockquote><p>\(X \) = Programming a visual representation of the Vietoris-Rips complex</p><p>I couldn&rsquo;t do \(X \) by myself in a reasonable amount of time. So I found out someone somewhere has already done a decent approximation of what I imagined \(X \) would be and the MIT licence allows me to COPYPASTA \(X \) .</p></blockquote><p><strong>CREDITS:</strong> <a href=https://github.com/cristobal-montecino/VietorisRipsVisualization>Cristobal Montecino</a>. Thanks Bro.</p><iframe src=https://cristobal-montecino.github.io/VietorisRipsVisualization/ width=600 height=400></iframe><h3 id=three-stages>Three Stages<a hidden class=anchor aria-hidden=true href=#three-stages>¶</a></h3><h4 id=from-music-to-image>From Music to Image<a hidden class=anchor aria-hidden=true href=#from-music-to-image>¶</a></h4><p>Ok. Now, how can we massage the information given from an audio file into something we can parse? We have to decide the dimensionality of our data structure, ie we need to choose the what are the type of <strong>indipendent</strong> information about the file we want to keep track of.</p><p>Here is an interactive notebook that computes the spectrogram of a given audio file, curtsy of binder:</p><p><a href=https://mybinder.org/v2/gist/theconsciouspasticcio/936369fbc913b479413418585f0cc8ee/HEAD><img loading=lazy src=https://mybinder.org/badge_logo.svg alt=Binder></a></p><p>or if you fancy google (you need to login to play around):</p><p><a href=https://colab.research.google.com/gist/theconsciouspasticcio/f4002b1201f28de634ed45ee4bae01c6/acustopology.ipynb><img loading=lazy src=https://colab.research.google.com/assets/colab-badge.svg alt="Google Colab"></a></p><p>the code:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> librosa
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> librosa.display
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> matplotlib.pyplot <span style=color:#66d9ef>as</span> plt
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> scipy.signal
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> scipy.io.wavfile <span style=color:#f92672>import</span> write
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> numpy <span style=color:#66d9ef>as</span> np
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># import audio file</span>
+</span></span><span style=display:flex><span>audio_file_path <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;piano.mp3&#39;</span>
+</span></span><span style=display:flex><span>y, sr <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>load(audio_file_path, sr<span style=color:#f92672>=</span><span style=color:#66d9ef>None</span>)  <span style=color:#75715e># Load the file as is with its original sampling rate (`sr=None`)</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Assuming y and sr are already defined from loading the audio</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Compute the Mel-scaled spectrogram</span>
+</span></span><span style=display:flex><span>S <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>feature<span style=color:#f92672>.</span>melspectrogram(y<span style=color:#f92672>=</span>y, sr<span style=color:#f92672>=</span>sr, n_fft<span style=color:#f92672>=</span><span style=color:#ae81ff>8192</span>, hop_length<span style=color:#f92672>=</span><span style=color:#ae81ff>128</span>, n_mels<span style=color:#f92672>=</span><span style=color:#ae81ff>256</span>)
+</span></span><span style=display:flex><span>S_dB <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>power_to_db(S, ref<span style=color:#f92672>=</span>np<span style=color:#f92672>.</span>max)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Plot the Mel spectrogram</span>
+</span></span><span style=display:flex><span>plt<span style=color:#f92672>.</span>figure(figsize<span style=color:#f92672>=</span>(<span style=color:#ae81ff>12</span>, <span style=color:#ae81ff>8</span>))
+</span></span><span style=display:flex><span>librosa<span style=color:#f92672>.</span>display<span style=color:#f92672>.</span>specshow(S_dB, sr<span style=color:#f92672>=</span>sr, x_axis<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;time&#39;</span>, y_axis<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;mel&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#75715e># plt.colorbar(format=&#39;%+2.0f dB&#39;)</span>
+</span></span><span style=display:flex><span>plt<span style=color:#f92672>.</span>title(<span style=color:#e6db74>&#39;Mel Spectrogram&#39;</span>)
+</span></span><span style=display:flex><span>plt<span style=color:#f92672>.</span>xlabel(<span style=color:#e6db74>&#39;Time&#39;</span>)
+</span></span><span style=display:flex><span>plt<span style=color:#f92672>.</span>ylabel(<span style=color:#e6db74>&#39;Frequency&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#75715e># plt.tight_layout()</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Save the Mel spectrogram to a file</span>
+</span></span><span style=display:flex><span>plt<span style=color:#f92672>.</span>savefig(<span style=color:#e6db74>&#39;mel_spectrogram.png&#39;</span>)
+</span></span></code></pre></div><h4 id=from-image-to-data>From Image to DATA<a hidden class=anchor aria-hidden=true href=#from-image-to-data>¶</a></h4><ul><li><p>the point cloud</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> librosa
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> librosa.display
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> matplotlib.pyplot <span style=color:#66d9ef>as</span> plt
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> scipy.signal
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> scipy.io.wavfile <span style=color:#f92672>import</span> write
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> numpy <span style=color:#66d9ef>as</span> np
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> mpl_toolkits.mplot3d <span style=color:#f92672>import</span> Axes3D
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># import audio file</span>
+</span></span><span style=display:flex><span>audio_file_path <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;piano.mp3&#39;</span>
+</span></span><span style=display:flex><span>y, sr <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>load(audio_file_path, sr<span style=color:#f92672>=</span><span style=color:#66d9ef>None</span>)  <span style=color:#75715e># Load the file as is with its original sampling rate (`sr=None`)</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Assuming you have your audio loaded in `y` and its sampling rate in `sr`</span>
+</span></span><span style=display:flex><span>S <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>feature<span style=color:#f92672>.</span>melspectrogram(y<span style=color:#f92672>=</span>y, sr<span style=color:#f92672>=</span>sr, n_fft<span style=color:#f92672>=</span><span style=color:#ae81ff>2048</span>, hop_length<span style=color:#f92672>=</span><span style=color:#ae81ff>512</span>, n_mels<span style=color:#f92672>=</span><span style=color:#ae81ff>128</span>)
+</span></span><span style=display:flex><span>S_dB <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>power_to_db(S, ref<span style=color:#f92672>=</span>np<span style=color:#f92672>.</span>max)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Generate the time and Mel frequency axes</span>
+</span></span><span style=display:flex><span>times <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>times_like(S, sr<span style=color:#f92672>=</span>sr, hop_length<span style=color:#f92672>=</span><span style=color:#ae81ff>512</span>)
+</span></span><span style=display:flex><span>mel_freqs <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>mel_frequencies(n_mels<span style=color:#f92672>=</span><span style=color:#ae81ff>128</span>, fmin<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>, fmax<span style=color:#f92672>=</span>sr<span style=color:#f92672>/</span><span style=color:#ae81ff>2</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Prepare x (time), y (frequency), and z (intensity) for 3D plotting</span>
+</span></span><span style=display:flex><span>x <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>tile(times, len(mel_freqs))
+</span></span><span style=display:flex><span>y <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>repeat(mel_freqs, len(times))
+</span></span><span style=display:flex><span>z <span style=color:#f92672>=</span> S_dB<span style=color:#f92672>.</span>flatten()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Plotting</span>
+</span></span><span style=display:flex><span>fig <span style=color:#f92672>=</span> plt<span style=color:#f92672>.</span>figure(figsize<span style=color:#f92672>=</span>(<span style=color:#ae81ff>10</span>, <span style=color:#ae81ff>7</span>))
+</span></span><span style=display:flex><span>ax <span style=color:#f92672>=</span> fig<span style=color:#f92672>.</span>add_subplot(<span style=color:#ae81ff>111</span>, projection<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;3d&#39;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Scatter plot for the 3D point cloud</span>
+</span></span><span style=display:flex><span>scat <span style=color:#f92672>=</span> ax<span style=color:#f92672>.</span>scatter(x, y, z, c<span style=color:#f92672>=</span>z, cmap<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;viridis&#39;</span>, s<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Adding labels and title</span>
+</span></span><span style=display:flex><span>ax<span style=color:#f92672>.</span>set_xlabel(<span style=color:#e6db74>&#39;Time (s)&#39;</span>)
+</span></span><span style=display:flex><span>ax<span style=color:#f92672>.</span>set_ylabel(<span style=color:#e6db74>&#39;Frequency (Hz)&#39;</span>)
+</span></span><span style=display:flex><span>ax<span style=color:#f92672>.</span>set_zlabel(<span style=color:#e6db74>&#39;Intensity (dB)&#39;</span>)
+</span></span><span style=display:flex><span>ax<span style=color:#f92672>.</span>set_title(<span style=color:#e6db74>&#39;3D Point Cloud of Mel Spectrogram&#39;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Add a color bar to indicate the intensity values</span>
+</span></span><span style=display:flex><span>cbar <span style=color:#f92672>=</span> fig<span style=color:#f92672>.</span>colorbar(scat, ax<span style=color:#f92672>=</span>ax)
+</span></span><span style=display:flex><span>cbar<span style=color:#f92672>.</span>set_label(<span style=color:#e6db74>&#39;Intensity (dB)&#39;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>plt<span style=color:#f92672>.</span>savefig(<span style=color:#e6db74>&#39;mel_pointcloud.png&#39;</span>)
+</span></span></code></pre></div></li></ul><ul><li><p>interactive plot</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> librosa
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> numpy <span style=color:#66d9ef>as</span> np
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> plotly.graph_objects <span style=color:#66d9ef>as</span> go
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Load your audio and compute the Mel spectrogram</span>
+</span></span><span style=display:flex><span>y, sr <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>load(<span style=color:#e6db74>&#39;piano.mp3&#39;</span>)
+</span></span><span style=display:flex><span>S <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>feature<span style=color:#f92672>.</span>melspectrogram(y<span style=color:#f92672>=</span>y, sr<span style=color:#f92672>=</span>sr, n_fft<span style=color:#f92672>=</span><span style=color:#ae81ff>2048</span>, hop_length<span style=color:#f92672>=</span><span style=color:#ae81ff>512</span>, n_mels<span style=color:#f92672>=</span><span style=color:#ae81ff>128</span>)
+</span></span><span style=display:flex><span>S_dB <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>power_to_db(S, ref<span style=color:#f92672>=</span>np<span style=color:#f92672>.</span>max)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Generate the time and Mel frequency axes</span>
+</span></span><span style=display:flex><span>times <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>times_like(S, sr<span style=color:#f92672>=</span>sr, hop_length<span style=color:#f92672>=</span><span style=color:#ae81ff>512</span>)
+</span></span><span style=display:flex><span>mel_freqs <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>mel_frequencies(n_mels<span style=color:#f92672>=</span><span style=color:#ae81ff>128</span>, fmin<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>, fmax<span style=color:#f92672>=</span>sr<span style=color:#f92672>/</span><span style=color:#ae81ff>2</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Prepare the data</span>
+</span></span><span style=display:flex><span>x <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>tile(times, len(mel_freqs))
+</span></span><span style=display:flex><span>y <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>repeat(mel_freqs, len(times))
+</span></span><span style=display:flex><span>z <span style=color:#f92672>=</span> S_dB<span style=color:#f92672>.</span>flatten()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Define the dB threshold for filtering out negligible values</span>
+</span></span><span style=display:flex><span>db_threshold <span style=color:#f92672>=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>60</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Create a mask to filter out values below the threshold</span>
+</span></span><span style=display:flex><span>mask <span style=color:#f92672>=</span> z <span style=color:#f92672>&gt;</span> db_threshold
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Apply the mask to x, y, and z</span>
+</span></span><span style=display:flex><span>x_filtered <span style=color:#f92672>=</span> x[mask]
+</span></span><span style=display:flex><span>y_filtered <span style=color:#f92672>=</span> y[mask]
+</span></span><span style=display:flex><span>z_filtered <span style=color:#f92672>=</span> z[mask]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Create a Plotly scatter3d object with the filtered data</span>
+</span></span><span style=display:flex><span>fig <span style=color:#f92672>=</span> go<span style=color:#f92672>.</span>Figure(data<span style=color:#f92672>=</span>[go<span style=color:#f92672>.</span>Scatter3d(
+</span></span><span style=display:flex><span>    x<span style=color:#f92672>=</span>x_filtered,
+</span></span><span style=display:flex><span>    y<span style=color:#f92672>=</span>y_filtered,
+</span></span><span style=display:flex><span>    z<span style=color:#f92672>=</span>z_filtered,
+</span></span><span style=display:flex><span>    mode<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;markers&#39;</span>,
+</span></span><span style=display:flex><span>    marker<span style=color:#f92672>=</span>dict(
+</span></span><span style=display:flex><span>        size<span style=color:#f92672>=</span><span style=color:#ae81ff>2</span>,
+</span></span><span style=display:flex><span>        color<span style=color:#f92672>=</span>z_filtered,  <span style=color:#75715e># Use filtered intensity for color mapping</span>
+</span></span><span style=display:flex><span>        colorscale<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;Viridis&#39;</span>,
+</span></span><span style=display:flex><span>        opacity<span style=color:#f92672>=</span><span style=color:#ae81ff>0.8</span>,
+</span></span><span style=display:flex><span>        colorbar<span style=color:#f92672>=</span>dict(title<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;Intensity (dB)&#39;</span>, bgcolor<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;black&#39;</span>)
+</span></span><span style=display:flex><span>    )
+</span></span><span style=display:flex><span>)])
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Update the layout for a better viewing experience in dark mode</span>
+</span></span><span style=display:flex><span>fig<span style=color:#f92672>.</span>update_layout(
+</span></span><span style=display:flex><span>    margin<span style=color:#f92672>=</span>dict(l<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>, r<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>, b<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>, t<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>),
+</span></span><span style=display:flex><span>    paper_bgcolor<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;black&#39;</span>,
+</span></span><span style=display:flex><span>    plot_bgcolor<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;black&#39;</span>,
+</span></span><span style=display:flex><span>    scene<span style=color:#f92672>=</span>dict(
+</span></span><span style=display:flex><span>        xaxis<span style=color:#f92672>=</span>dict(
+</span></span><span style=display:flex><span>            title<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;Time (s)&#39;</span>,
+</span></span><span style=display:flex><span>            backgroundcolor<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;black&#34;</span>,
+</span></span><span style=display:flex><span>            color<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;white&#39;</span>,
+</span></span><span style=display:flex><span>            gridcolor<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;gray&#39;</span>
+</span></span><span style=display:flex><span>        ),
+</span></span><span style=display:flex><span>        yaxis<span style=color:#f92672>=</span>dict(
+</span></span><span style=display:flex><span>            title<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;Frequency (Hz)&#39;</span>,
+</span></span><span style=display:flex><span>            backgroundcolor<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;black&#34;</span>,
+</span></span><span style=display:flex><span>            color<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;white&#39;</span>,
+</span></span><span style=display:flex><span>            gridcolor<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;gray&#39;</span>
+</span></span><span style=display:flex><span>        ),
+</span></span><span style=display:flex><span>        zaxis<span style=color:#f92672>=</span>dict(
+</span></span><span style=display:flex><span>            title<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;Intensity (dB)&#39;</span>,
+</span></span><span style=display:flex><span>            backgroundcolor<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;black&#34;</span>,
+</span></span><span style=display:flex><span>            color<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;white&#39;</span>,
+</span></span><span style=display:flex><span>            gridcolor<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;gray&#39;</span>
+</span></span><span style=display:flex><span>        )
+</span></span><span style=display:flex><span>    )
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Save the plot as an HTML file</span>
+</span></span><span style=display:flex><span>html_file_path <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;filtered_mel_spectrogram_3d_dark.html&#39;</span>
+</span></span><span style=display:flex><span>fig<span style=color:#f92672>.</span>write_html(html_file_path)
+</span></span></code></pre></div><p>This is the output:</p><iframe src=https://theconsciouspasticcio.github.io/acustic-top1/filtered_mel_spectrogram_3d_dark.html width=700 height=450></iframe></li></ul><h4 id=from-data-to-topology>From DATA to Topology<a hidden class=anchor aria-hidden=true href=#from-data-to-topology>¶</a></h4><p>Ok since my 20yo laptop could melt any instant, let&rsquo;s try to be reasonable and downsample the previous result. This code just divide the space into little cubes and takes the mean value of all the points within.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>from</span> ripser <span style=color:#f92672>import</span> ripser
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> persim <span style=color:#f92672>import</span> plot_diagrams, PersistenceImager
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> numpy <span style=color:#66d9ef>as</span> np
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> matplotlib.pyplot <span style=color:#66d9ef>as</span> plt
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> librosa
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> plotly.graph_objects <span style=color:#66d9ef>as</span> go
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Load your audio and compute the Mel spectrogram</span>
+</span></span><span style=display:flex><span>y, sr <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>load(<span style=color:#e6db74>&#39;piano.mp3&#39;</span>)
+</span></span><span style=display:flex><span>S <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>feature<span style=color:#f92672>.</span>melspectrogram(y<span style=color:#f92672>=</span>y, sr<span style=color:#f92672>=</span>sr, n_fft<span style=color:#f92672>=</span><span style=color:#ae81ff>2048</span>, hop_length<span style=color:#f92672>=</span><span style=color:#ae81ff>512</span>, n_mels<span style=color:#f92672>=</span><span style=color:#ae81ff>128</span>)
+</span></span><span style=display:flex><span>S_dB <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>power_to_db(S, ref<span style=color:#f92672>=</span>np<span style=color:#f92672>.</span>max)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Generate the time and Mel frequency axes</span>
+</span></span><span style=display:flex><span>times <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>times_like(S, sr<span style=color:#f92672>=</span>sr, hop_length<span style=color:#f92672>=</span><span style=color:#ae81ff>512</span>)
+</span></span><span style=display:flex><span>mel_freqs <span style=color:#f92672>=</span> librosa<span style=color:#f92672>.</span>mel_frequencies(n_mels<span style=color:#f92672>=</span><span style=color:#ae81ff>128</span>, fmin<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>, fmax<span style=color:#f92672>=</span>sr<span style=color:#f92672>/</span><span style=color:#ae81ff>2</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Prepare the data</span>
+</span></span><span style=display:flex><span>x <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>tile(times, len(mel_freqs))
+</span></span><span style=display:flex><span>y <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>repeat(mel_freqs, len(times))
+</span></span><span style=display:flex><span>z <span style=color:#f92672>=</span> S_dB<span style=color:#f92672>.</span>flatten()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Define the dB threshold for filtering out negligible values</span>
+</span></span><span style=display:flex><span>db_threshold <span style=color:#f92672>=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>60</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Create a mask to filter out values below the threshold</span>
+</span></span><span style=display:flex><span>mask <span style=color:#f92672>=</span> z <span style=color:#f92672>&gt;</span> db_threshold
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Apply the mask to x, y, and z</span>
+</span></span><span style=display:flex><span>x_filtered <span style=color:#f92672>=</span> x[mask]
+</span></span><span style=display:flex><span>y_filtered <span style=color:#f92672>=</span> y[mask]
+</span></span><span style=display:flex><span>z_filtered <span style=color:#f92672>=</span> z[mask]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># # Create a Plotly scatter3d object with the filtered data</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># fig = go.Figure(data=[go.Scatter3d(</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     x=x_filtered,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     y=y_filtered,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     z=z_filtered,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     mode=&#39;markers&#39;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     marker=dict(</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         size=2,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         color=z_filtered,  # Use filtered intensity for color mapping</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         colorscale=&#39;Viridis&#39;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         opacity=0.8,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         colorbar=dict(title=&#39;Intensity (dB)&#39;, bgcolor=&#39;black&#39;)</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     )</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># )])</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Define the downsample by averaging function</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>downsample_by_averaging</span>(points, cube_size):
+</span></span><span style=display:flex><span>    min_coords <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>min(points, axis<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>)
+</span></span><span style=display:flex><span>    max_coords <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>max(points, axis<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>)
+</span></span><span style=display:flex><span>    indices <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>floor((points <span style=color:#f92672>-</span> min_coords) <span style=color:#f92672>/</span> cube_size)<span style=color:#f92672>.</span>astype(int)
+</span></span><span style=display:flex><span>    dtype <span style=color:#f92672>=</span> [(<span style=color:#e6db74>&#39;sum&#39;</span>, float, <span style=color:#ae81ff>3</span>), (<span style=color:#e6db74>&#39;count&#39;</span>, int)]
+</span></span><span style=display:flex><span>    grid <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>zeros(indices<span style=color:#f92672>.</span>max(axis<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>) <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>, dtype<span style=color:#f92672>=</span>dtype)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> point, index <span style=color:#f92672>in</span> zip(points, indices):
+</span></span><span style=display:flex><span>        grid[tuple(index)][<span style=color:#e6db74>&#39;sum&#39;</span>] <span style=color:#f92672>+=</span> point
+</span></span><span style=display:flex><span>        grid[tuple(index)][<span style=color:#e6db74>&#39;count&#39;</span>] <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    non_empty_cubes <span style=color:#f92672>=</span> grid[<span style=color:#e6db74>&#39;count&#39;</span>] <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>    averaged_points <span style=color:#f92672>=</span> grid[<span style=color:#e6db74>&#39;sum&#39;</span>][non_empty_cubes] <span style=color:#f92672>/</span> grid[<span style=color:#e6db74>&#39;count&#39;</span>][non_empty_cubes][:, np<span style=color:#f92672>.</span>newaxis]
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> averaged_points
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Assuming x_filtered, y_filtered, and z_filtered are defined and contain your point cloud data</span>
+</span></span><span style=display:flex><span>points <span style=color:#f92672>=</span> np<span style=color:#f92672>.</span>column_stack((x_filtered, y_filtered, z_filtered))
+</span></span><span style=display:flex><span><span style=color:#75715e># Combine filtered points and apply downsampling</span>
+</span></span><span style=display:flex><span>downsampled_points <span style=color:#f92672>=</span> downsample_by_averaging(points, cube_size<span style=color:#f92672>=</span><span style=color:#ae81ff>8</span>)  <span style=color:#75715e># Adjust cube_size as needed</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># # Plotting the downsampled points with Plotly</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># fig = go.Figure(data=[go.Scatter3d(</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     x=downsampled_points[:, 0],  # Time</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     y=downsampled_points[:, 1],  # Frequency</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     z=downsampled_points[:, 2],  # Intensity</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     mode=&#39;markers&#39;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     marker=dict(</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         size=2,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         color=downsampled_points[:, 2],  # Color by intensity</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         colorscale=&#39;Viridis&#39;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         opacity=0.8,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     )</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># )])</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># fig.update_layout(</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     title=&#34;Downsampled 3D Mel Spectrogram&#34;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     scene=dict(</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         xaxis_title=&#39;Time&#39;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         yaxis_title=&#39;Frequency&#39;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         zaxis_title=&#39;Intensity&#39;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     )</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># )</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># #Update the layout for a better viewing experience in dark mode</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># fig.update_layout(</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     margin=dict(l=0, r=0, b=0, t=0),</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     paper_bgcolor=&#39;black&#39;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     plot_bgcolor=&#39;black&#39;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     scene=dict(</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         xaxis=dict(</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#             title=&#39;Time (s)&#39;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#             backgroundcolor=&#34;black&#34;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#             color=&#39;white&#39;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#             gridcolor=&#39;gray&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         ),</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         yaxis=dict(</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#             title=&#39;Frequency (Hz)&#39;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#             backgroundcolor=&#34;black&#34;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#             color=&#39;white&#39;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#             gridcolor=&#39;gray&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         ),</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         zaxis=dict(</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#             title=&#39;Intensity (dB)&#39;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#             backgroundcolor=&#34;black&#34;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#             color=&#39;white&#39;,</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#             gridcolor=&#39;gray&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#         )</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#     )</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># )</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># # Save the plot as an HTML file</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># html_file_path = &#39;downsampled_3D_mel_spectrogram_plot.html&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># fig.write_html(html_file_path)</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># print(f&#34;Plot saved to {html_file_path}&#34;)</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Assuming downsampled_points is available and contains the downsampled point cloud</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Apply Ripser to compute Vietoris-Rips persistence barcodes</span>
+</span></span><span style=display:flex><span>diagrams <span style=color:#f92672>=</span> ripser(downsampled_points)[<span style=color:#e6db74>&#39;dgms&#39;</span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Plot and save the persistence diagrams</span>
+</span></span><span style=display:flex><span>plt<span style=color:#f92672>.</span>figure(figsize<span style=color:#f92672>=</span>(<span style=color:#ae81ff>12</span>, <span style=color:#ae81ff>8</span>))
+</span></span><span style=display:flex><span>plot_diagrams(diagrams, show<span style=color:#f92672>=</span><span style=color:#66d9ef>False</span>)
+</span></span><span style=display:flex><span>plt<span style=color:#f92672>.</span>savefig(<span style=color:#e6db74>&#39;persistence_diagrams_downsampled.png&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#75715e># plt.close()</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Initialize PersistenceImager</span>
+</span></span><span style=display:flex><span>pimgr <span style=color:#f92672>=</span> PersistenceImager(pixel_size<span style=color:#f92672>=</span><span style=color:#ae81ff>0.05</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># # Fit and transform the H1 diagram to a persistence image</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># # Note: diagrams[1] corresponds to H1. Use diagrams[0] for H0.</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># imgs = pimgr.fit_transform(diagrams[1])</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># # Plot and save the persistence image</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># plt.figure(figsize=(6, 6))</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># pimgr.plot_image(imgs[0], ax=plt.gca())</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># plt.savefig(&#39;persistence_image_downsampled.png&#39;)</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># # plt.close()</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Check if the desired homology dimension diagram is non-empty</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> diagrams[<span style=color:#ae81ff>1</span>]<span style=color:#f92672>.</span>size <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span>:
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Fit and transform to get the persistence image</span>
+</span></span><span style=display:flex><span>    imgs <span style=color:#f92672>=</span> pimgr<span style=color:#f92672>.</span>fit_transform([diagrams[<span style=color:#ae81ff>1</span>]])  <span style=color:#75715e># diagrams[1] for H1</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Plot and save the first (and in this case, only) persistence image</span>
+</span></span><span style=display:flex><span>    plt<span style=color:#f92672>.</span>imshow(imgs[<span style=color:#ae81ff>0</span>], origin<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;lower&#39;</span>, cmap<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;hot&#39;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#75715e># plt.colorbar()</span>
+</span></span><span style=display:flex><span>    plt<span style=color:#f92672>.</span>savefig(<span style=color:#e6db74>&#39;persistence_image_downsampled.png&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>else</span>:
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>&#34;No features found in the desired homology dimension.&#34;</span>)
+</span></span></code></pre></div><h2 id=faq><strong>FAQ</strong><a hidden class=anchor aria-hidden=true href=#faq>¶</a></h2><h3 id=why-does-the-spectrogram-of-an-audio-file-capture-its-essence>Why does the spectrogram of an audio file capture its essence?<a hidden class=anchor aria-hidden=true href=#why-does-the-spectrogram-of-an-audio-file-capture-its-essence>¶</a></h3><p>It doesn&rsquo;t. In my opinion is just an interesting perspective you can take. Besides, it actually simplify a lot the next step.</p><h4 id=wait-but-what-are-spectrograms>Wait, but what are spectrograms?<a hidden class=anchor aria-hidden=true href=#wait-but-what-are-spectrograms>¶</a></h4><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/7WYw3qoTdU4?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div><p>TLDW: Spectrograms are the representation in (aplitude, frequency, time)&mdash;space of sound.</p><p>They encompass so much information about the sound. The key is that by taking only the notes you are basically throwing away all the information about the timbre, i.e. you are effectively restricting to the first Fourier coefficient and silencing to zero every other one.</p><p><span class=underline>But Fourier is nice, we want everything</span>. Hence, the Topological Audio-Data Analysis ( <a href="https://www.youtube.com/watch?v=mLRcBCJlfTI">TADA!</a> )</p><h3 id=euclidean-distance-doesn-t-capture-any-musical-information>Euclidean distance doesn&rsquo;t capture any &ldquo;musical&rdquo; information<a hidden class=anchor aria-hidden=true href=#euclidean-distance-doesn-t-capture-any-musical-information>¶</a></h3><p>\(C_{0}\) is musically, perceivably, &ldquo;closer&rdquo; to its harmonics than \(D_{0}\), i.e.</p><p>\[[C_0, C_1, G_1, C_2, E_2, G_2]\]
+are the pitches of the first six harmonics in the equal temperament tuning system.</p><p>or pedantically the first five overtones:
+\[[C_1, G_1, C_2, E_2, G_2]\]</p><p>and overtones do not have overtones, i.e. are f sine waves. And <a href=https://physics.stackexchange.com/questions/363307/why-is-a-pure-tone-sinusoidal>why is that</a> is f beautiful and Fourier-pilled</p><h3 id=what-does-the-information-about-this-topology-tells-about-the-audio>What does the information about this &ldquo;topology&rdquo; tells about the audio<a hidden class=anchor aria-hidden=true href=#what-does-the-information-about-this-topology-tells-about-the-audio>¶</a></h3><p>Honestly, I don&rsquo;t know. But this can be a way to classify the data coming from an audio file. Thinking not that hard about it, you could imagine that no matter the significance of the topological information retrieved in this way, still on a meta-analysis you could find patterns inside classes of similar audio file.</p><p>Similarly
+>> Chris Dumas video</p><h3 id=given-that-the-output-is-mathematically-meaningful-can-you-recover-the-topological-space-from-the-persistent-barcodes>Given that the output is mathematically meaningful, can you recover the topological space from the persistent barcodes?<a hidden class=anchor aria-hidden=true href=#given-that-the-output-is-mathematically-meaningful-can-you-recover-the-topological-space-from-the-persistent-barcodes>¶</a></h3><h3 id=have-somebody-else-already-done-it>Have somebody else already done it?<a hidden class=anchor aria-hidden=true href=#have-somebody-else-already-done-it>¶</a></h3><p>Kind of:</p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading=eager referrerpolicy=strict-origin-when-cross-origin src="https://www.youtube.com/embed/PFzy_5RVqF4?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 title="YouTube video"></iframe></div></div><footer class=post-footer></footer><div class=comments-separator></div></article></main><footer class=footer><span>&copy; 2024 <a href=http://localhost:1313/>The Conscious Pasticcio</a></span><span style=display:inline-block;margin-left:1em>
+<a href=https://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA</a>
+</span><span style=display:inline-block;margin-left:1em>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+    <a href=https://github.com/reorx/hugo-PaperModX/ rel=noopener target=_blank>PaperModX</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>(function(){const t="1"=="1";if(t)return;let e=document.getElementById("theme-toggle");e.removeEventListener("click",toggleThemeListener),e.addEventListener("click",toggleThemeListener)})()</script><script>(function(){let e=document.getElementById("menu");e&&(e.scrollLeft=localStorage.getItem("menu-scroll-position"),e.onscroll=function(){localStorage.setItem("menu-scroll-position",e.scrollLeft)});const t=""=="1",n=""=="1";if(window.matchMedia("(prefers-reduced-motion: reduce)").matches||t||n)return;document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})})()</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>if(window.scrollListeners)for(const e of scrollListeners)window.removeEventListener("scroll",e);window.scrollListeners=[]</script><script src=/js/medium-zoom.min.js data-no-instant></script><script>(function(){const a="1"=="1";if(!a)return;if(!document.querySelector(".toc")){console.log("no toc found, ignore toc scroll");return}const r=window.scrollListeners,t=document.querySelectorAll("h1[id],h2[id],h3[id],h4[id],h5[id]"),n="active";let e=t[0];o(e).classList.add(n);const c=()=>{const s=[];for(const e of t)if(l(e)<5)s.push(e);else break;s.length>0?newActiveHeading=s[s.length-1]:newActiveHeading=t[0],e!=newActiveHeading&&(o(e).classList.remove(n),e=newActiveHeading,o(e).classList.add(n))};let s=null;const i=()=>{s!==null&&clearTimeout(s),s=setTimeout(c,50)};window.addEventListener("scroll",i,!1),r.push(i);function o(e){const t=encodeURI(e.getAttribute("id")).toLowerCase();return document.querySelector(`.toc ul li a[href="#${t}"]`)}function l(e){if(!e.getClientRects().length)return 0;let t=e.getBoundingClientRect();return t.top}})()</script></body></html>
