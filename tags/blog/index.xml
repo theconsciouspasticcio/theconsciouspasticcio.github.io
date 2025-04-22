@@ -13,9 +13,13 @@
       <pubDate>Wed, 01 May 2024 09:36:24 +0200</pubDate>
       
       <guid>http://localhost:1313/posts/tda/acustopology/</guid>
-      <description>[Epistemic status:] the closure of this post is not compact
-This is hard to explain, at least from an epistemological point of view. Lets say I needed an excuse to dig deeper into a subject that bugged me for the last five months.
-Topological Data Analysis (TDA), as I&amp;rsquo;ve come to understand it, is the belief that data can hold some internal geometric structure that can be exploited through topologist-single-blade-swiss-army-knife homology.</description>
+      <description>&lt;div class=&#34;alert-warning alert&#34;&gt;
+&lt;div class=&#34;alert-heading&#34;&gt;
+&lt;p&gt;[Epistemic status:] the closure of this post is not compact&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;This is hard to explain, at least from an epistemological point of view. Lets say I needed an excuse to dig deeper into a subject that bugged me for the last five months.&lt;/p&gt;
+&lt;p&gt;Topological Data Analysis (TDA), as I&amp;rsquo;ve come to understand it, is the belief that data can hold some internal geometric structure that can be exploited through topologist-single-blade-swiss-army-knife homology.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<div class="alert-warning alert">
 <div class="alert-heading">
 <p>[Epistemic status:] the closure of this post is not compact</p>
@@ -42,8 +46,7 @@ Topological Data Analysis (TDA), as I&amp;rsquo;ve come to understand it, is the
 <p>Now &mdash; hold on.</p>
 <blockquote>
 <p>\(X \) =  Programming a visual representation of the Vietoris-Rips complex</p>
-<p>I couldn&rsquo;t do \(X \) by myself in a reasonable amount of time. So I found out someone somewhere has already done a decent approximation of what I imagined \(X \) would be and the MIT licence allows me to COPYPASTA \(X \) .</p>
-</blockquote>
+<p>I couldn&rsquo;t do \(X \) by myself in a reasonable amount of time. So I found out someone somewhere has already done a decent approximation of what I imagined \(X \) would be and the MIT licence allows me to COPYPASTA \(X \) .</p></blockquote>
 <p><strong>CREDITS:</strong> <a href="https://github.com/cristobal-montecino/VietorisRipsVisualization">Cristobal Montecino</a>. Thanks Bro.</p>
 <iframe src="https://cristobal-montecino.github.io/VietorisRipsVisualization/" width="600" height="400"></iframe>
 <h3 id="three-stages">Three Stages</h3>
@@ -395,12 +398,8 @@ Topological Data Analysis (TDA), as I&amp;rsquo;ve come to understand it, is the
 <h3 id="why-does-the-spectrogram-of-an-audio-file-capture-its-essence">Why does the spectrogram of an audio file capture its essence?</h3>
 <p>It doesn&rsquo;t. In my opinion is just an interesting perspective you can take. Besides, it actually simplify a lot the next step.</p>
 <h4 id="wait-but-what-are-spectrograms">Wait, but what are spectrograms?</h4>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/7WYw3qoTdU4?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/7WYw3qoTdU4?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
 <p>TLDW: Spectrograms are the representation in (aplitude, frequency, time)&mdash;space of sound.</p>
@@ -420,12 +419,8 @@ are the pitches of the first six harmonics in the equal temperament tuning syste
 <h3 id="given-that-the-output-is-mathematically-meaningful-can-you-recover-the-topological-space-from-the-persistent-barcodes">Given that the output is mathematically meaningful, can you recover the topological space from the persistent barcodes?</h3>
 <h3 id="have-somebody-else-already-done-it">Have somebody else already done it?</h3>
 <p>Kind of:</p>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/PFzy_5RVqF4?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/PFzy_5RVqF4?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
 ]]></content:encoded>
