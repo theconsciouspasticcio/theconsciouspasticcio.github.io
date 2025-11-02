@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      .layer-box { fill: #1a1a1a; stroke: #56B4E9; stroke-width: 2; }
+      .layer-text { font-family: 'Georgia', serif; font-size: 14px; fill: #F0E442; }
+      .layer-label { font-family: 'Georgia', serif; font-size: 13px; fill: #E69F00; font-style: italic; }
+      .section-line { stroke: #56B4E9; stroke-width: 1.5; }
+      .axis-label { font-family: 'Georgia', serif; font-size: 12px; fill: #E69F00; }
+      .compress-arrow { stroke: #D55E00; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .compress-label { font-family: 'Georgia', serif; font-size: 14px; fill: #D55E00; font-weight: bold; }
+      .dotted-line { stroke: #56B4E9; stroke-width: 1; stroke-dasharray: 3,3; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#D55E00" />
+    </marker>
+  </defs>
+  
+  <!-- Dark background -->
+  <rect x="0" y="0" width="800" height="500" fill="#0d1117"/>
+  
+  <!-- Depth/Complexity axis label -->
+  <text x="30" y="250" class="axis-label" transform="rotate(-90 30 250)" text-anchor="middle">depth / complexity</text>
+  <polygon points="50,80 45,90 55,90" fill="#E69F00"/>
+  <line x1="50" y1="90" x2="50" y2="420" stroke="#E69F00" stroke-width="1.5"/>
+  
+  <!-- Layer n -->
+  <g id="layer-n">
+    <!-- Main box -->
+    <rect x="80" y="80" width="250" height="340" class="layer-box" rx="4"/>
+    
+    <!-- Layer label -->
+    <text x="205" y="60" class="layer-text" text-anchor="middle" font-weight="bold">layer-n</text>
+    
+    <!-- Sections from bottom to top -->
+    <!-- Primitives / Common ground -->
+    <rect x="80" y="340" width="250" height="80" fill="#004d3d" stroke="none"/>
+    <line x1="80" y1="340" x2="330" y2="340" class="section-line"/>
+    <text x="205" y="370" class="layer-text" text-anchor="middle">primitives</text>
+    <text x="205" y="390" class="layer-label" text-anchor="middle">common ground</text>
+    
+    <!-- Definitions / Local organisation -->
+    <rect x="80" y="250" width="250" height="90" fill="#003959" stroke="none"/>
+    <line x1="80" y1="250" x2="330" y2="250" class="section-line"/>
+    <text x="205" y="285" class="layer-text" text-anchor="middle">definitions</text>
+    <text x="205" y="305" class="layer-label" text-anchor="middle">local organisation</text>
+    
+    <!-- Theorems / Pattern recognition -->
+    <rect x="80" y="160" width="250" height="90" fill="#663c54" stroke="none"/>
+    <line x1="80" y1="160" x2="330" y2="160" class="section-line"/>
+    <text x="205" y="195" class="layer-text" text-anchor="middle">theorems</text>
+    <text x="205" y="215" class="layer-label" text-anchor="middle">pattern recognition</text>
+    
+    <!-- Frameworks / Formalized language -->
+    <rect x="80" y="80" width="250" height="80" fill="#734f00" stroke="none"/>
+    <text x="205" y="110" class="layer-text" text-anchor="middle">frameworks</text>
+    <text x="205" y="130" class="layer-label" text-anchor="middle">formalized language</text>
+  </g>
+  
+  <!-- Compression lines from layer-n to layer-n+1 primitives -->
+  <line x1="330" y1="80" x2="470" y2="340" class="dotted-line" stroke-width="2"/>
+  <line x1="330" y1="420" x2="470" y2="420" class="dotted-line" stroke-width="2"/>
+  
+  <!-- .zip label centered in trapezoid -->
+  <text x="400" y="285" class="compress-label" text-anchor="middle" font-size="18">.zip</text>
+  
+  <!-- Layer n+1 -->
+  <g id="layer-n-plus-1">
+    <!-- Main box -->
+    <rect x="470" y="260" width="250" height="160" class="layer-box" rx="4"/>
+    
+    <!-- Layer label -->
+    <text x="595" y="240" class="layer-text" text-anchor="middle" font-weight="bold">layer-n+1</text>
+    
+    <!-- Primitives / Common ground (this was the top of layer-n) -->
+    <rect x="470" y="340" width="250" height="80" fill="#004d3d" stroke="none"/>
+    <line x1="470" y1="340" x2="720" y2="340" class="section-line"/>
+    <text x="595" y="370" class="layer-text" text-anchor="middle">primitives</text>
+    <text x="595" y="390" class="layer-label" text-anchor="middle">common ground</text>
+    
+    <!-- New layers being built on top -->
+    <rect x="470" y="260" width="250" height="80" fill="#003959" stroke="none"/>
+    <text x="595" y="290" class="layer-text" text-anchor="middle">definitions</text>
+    <text x="595" y="310" class="layer-label" text-anchor="middle">local organisation</text>
+    
+    <!-- Dotted lines suggesting continuation -->
+    <line x1="595" y1="260" x2="595" y2="230" class="dotted-line"/>
+    <text x="595" y="220" class="axis-label" text-anchor="middle">⋮</text>
+  </g>
+  
+  <!-- Annotation text -->
+  <text x="400" y="470" class="layer-label" text-anchor="middle" font-size="12">
+    Yesterday's achievements become today's grammar
+  </text>
+</svg>
