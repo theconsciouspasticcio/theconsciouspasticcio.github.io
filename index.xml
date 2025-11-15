@@ -197,7 +197,6 @@
 </figure>
 
 <p>This associativity condition on our theory means that our knowledge of the system is complete. We possess knowledge of all possible compositions, and from all possible compositions we can retrieve their component functions and therefore source and target sets. In this theory, ignorance is not allowed.</p>
-<p>Why do we insist on associativity? This isn&rsquo;t arbitrary—it&rsquo;s about coherent reasoning itself. Without associativity, the meaning of a sequence of operations would depend on invisible parentheses floating in conceptual space. You&rsquo;d need a meta-level to track how you&rsquo;re grouping things, then a meta-meta-level to track that, spiraling into infinite regress.</p>
 <p>Associativity is what allows us to think linearly about processes. It&rsquo;s why we can write &ldquo;ABCD&rdquo; without specifying whether we mean ((AB)C)D or A(B(CD)). This coherence is what separates meaningful structure from noise.</p>
 <h4 id="isomorphism">Isomorphism</h4>
 <p>Let us play with what we have built. Consider:</p>
