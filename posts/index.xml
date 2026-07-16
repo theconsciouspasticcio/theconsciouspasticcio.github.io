@@ -6,12 +6,68 @@
     <description>Recent content in Posts on The Conscious Pasticcio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://theconsciouspasticcio.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0100</lastBuildDate><atom:link href="https://theconsciouspasticcio.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reflections on YTM</title>
+      <link>https://theconsciouspasticcio.github.io/posts/reflections-on-ytm/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0100</pubDate>
+      <guid>https://theconsciouspasticcio.github.io/posts/reflections-on-ytm/</guid>
+      <description>&lt;p&gt;Epistemic status: low. I wrote this in an airport, in a fury, straight after YTM 2026 (the Young Topologists Meeting), most of which I spent nodding along to things I didn&amp;rsquo;t understand and suspect nobody else did either. Mostly it&amp;rsquo;s me rambling about a bad week, with maybe one real idea buried in it.&lt;/p&gt;
+&lt;h2 id=&#34;the-setup&#34;&gt;The setup&lt;/h2&gt;
+&lt;p&gt;Imagine you&amp;rsquo;re a musician at a music festival. Everyone&amp;rsquo;s supposed to share their own composition, so that the others can appreciate it.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Epistemic status: low. I wrote this in an airport, in a fury, straight after YTM 2026 (the Young Topologists Meeting), most of which I spent nodding along to things I didn&rsquo;t understand and suspect nobody else did either. Mostly it&rsquo;s me rambling about a bad week, with maybe one real idea buried in it.</p>
+<h2 id="the-setup">The setup</h2>
+<p>Imagine you&rsquo;re a musician at a music festival. Everyone&rsquo;s supposed to share their own composition, so that the others can appreciate it.</p>
+<p><em>(∗ 1st talk begins ∗: I apologize, I won&rsquo;t have time to explain everything, but I&rsquo;m happy to answer questions afterwards.)</em></p>
+<p>So, the main idea is that certain music scales, studied by Pseudo-famous person 1 and Pseudo-famous-person-only-in-a-very-niche-context 2 (<em>both dead, or retired</em>), have been studied for fifteen years now. For no reason other than that someone spent time and effort on them, and nobody else ever bothered to ask why.</p>
+<p>Let <img src="/img/ytm-notefig.png" alt="two beamed musical notes on a staff" style="display:inline-block; height:1.8em; vertical-align:-0.6em; margin:0 0.25em;"> \(=\ell^{\sharp}\). Then we can use the shifts \(\ell^{\sharp}[i]\) to construct the music scale in 8-TET, using a very important tool called cool-name #1, that we abbreviate with \(C_1^{\text{cool}}\).</p>
+<p><em>(not fixing the other references, it&rsquo;s obvious)</em></p>
+<h2 id="the-theorem">The theorem</h2>
+<p>So, if we piece it together (<em>there&rsquo;s not enough time to expand this</em>):</p>
+<p>\[ \Bigl(C_2^{\text{cool}}\bigl(C_1^{\text{cool}}(\ell^{\sharp}[i])\bigr)^{t}\Bigr) \;\oplus\; C_1^{\text{cool}}\bigl(lll(\ell^{\sharp}[6])\bigr)[m] \]</p>
+<p>these are the 7 cones for [NHARTPOTM]<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>Here \(n\) is a very important number that decides the pitch of the composition. This construction is very beautiful, because it lets us describe any other cohomology-pseudo, cool-name-1, cool-name-2, random-name-that-I-just-came-up-with-because-it&rsquo;s-cute. This whole collection was used by Random-name #2 to compose the national anthem (1992) of a state that doesn&rsquo;t exist anymore. They say it was so beautiful that people used to cry every time, and end up hugging each other in an eternal sense of community, happiness and hope.</p>
+<p>But let&rsquo;s focus on the punchline now. If we set</p>
+<p>\[ \circledast \;\equiv\; \operatorname{glzt}(C_{12})^{lll} \]</p>
+<p>then</p>
+<p>\[ \operatorname{glzt}(C_{12})^{lll-1} \;=\; \operatorname{glzt}(C_{12})[-6] \]</p>
+<p>is the generally recursive pattern of the sequence. <strong>QED</strong>.</p>
+<h2 id="questions">Questions</h2>
+<p><strong>Question.</strong> I don&rsquo;t know the work of Random person #1, and I haven&rsquo;t read [NHARTPOTM], but I was wondering if you could share some of your thoughts on why \(\operatorname{glzt}(C_{12})^{lll}\) sounds the way it does, for a given \([m]\)?</p>
+<p><strong>Answer (branch 1).</strong> So, in practice this is very difficult to say. \(n\) varies in a log-\(t\) fashion with respect to a 197-TET note, chosen from the 7th quartile of the distribution of 18th equivariant triples. So, yeah. It&rsquo;s a hard problem. But thanks for the question.</p>
+<p><strong>Answer (branch 2).</strong> Yeah, so, I know this has been applied in ornithology, to study a certain species of hummingbird: when they mate, they produce a similar sound, close enough to what [NHARTPOTM] (very vaguely) describes. But I don&rsquo;t know, I don&rsquo;t study birds.</p>
+<p><strong>Question 2.</strong> Is the composition \(\operatorname{glzt}(C_{12})^{lll}\) written for a string concerto, or a piano concerto?</p>
+<p><strong>Answer.</strong> So, it really depends on \([m]\). If \(n \geq (7+8k)^{lll}\), then yes, but only for violas that don&rsquo;t have a \(\sharp\) string. If \(n \leq ((lll))^{lll}\), then the composition doesn&rsquo;t fit any instrument at all. I know that&rsquo;s kind of a big problem, but we&rsquo;re working to solve it, at least for</p>
+<p>\[ lll = lll\cdot\bigl((\wedge^{\sharp\cdot\sharp})_{b}\bigr)^{d} \qquad \text{in 88-TET.} \]</p>
+<h2 id="but-seriously-now">But seriously now</h2>
+<p>I think the point I was trying to make, through all this self-play, is that we&rsquo;re so stranded we don&rsquo;t even know how lost we are anymore. It&rsquo;s like waking up on a life-raft in the middle of the ocean, and not being able to conceptualize what &ldquo;lost&rdquo; even means.</p>
+<p>We can&rsquo;t find ourselves in what we thought we knew. There&rsquo;s nothing underneath. I guess this is the true meaning of lost: it&rsquo;s about the void it leaves behind, not knowing what it was.</p>
+<p>What is this helplessness that conferences like these ones leave on my skin?</p>
+<p>It&rsquo;s about losing grip on what the concepts really mean. Not their definitions, not quite their epistemological justification,<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> but their epistemological <em>pedigree</em>: what followed what, why \(B\) instead of \(B&rsquo;\) or \(B&rsquo;&rsquo;\), what the design choices were, why they were necessary or even interesting.</p>
+<p>\[ A \longleftarrow B \longleftarrow C \longleftarrow \cdots \]</p>
+<p>And it&rsquo;s about the <em>why</em>. Why we&rsquo;re even solving the problem in the first place. About the fact that we don&rsquo;t acknowledge the human biases, not even slightly, taking for granted that specifying the syntax is enough.</p>
+<p>We stand on the shoulders of giants, but we never bother understanding the giants. We generalize and optimize things that don&rsquo;t need to exist, when we can&rsquo;t even justify them.</p>
+<p>This bothers me. And it doesn&rsquo;t seem to bother the others.</p>
+<p>If I take this stance openly, it looks like I&rsquo;m villainizing the people who keep this system of useless, auto-confined criticism running. But I couldn&rsquo;t care less. I&rsquo;m sure they&rsquo;re nice, and passionate, and lovable people. But you cannot grow a plant with just love. And you cannot have a good community if you don&rsquo;t foster healthy criticism.</p>
+<p>The <strong>representability problem</strong>: in a place where you can replace anything with anything else, justifying the choice of representation should be mandatory.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>NHARTPOTM: Nobody Has Actually Read This Paper Other Than Me.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Physics is what every mathematician reaches for the moment a construction needs to look justified. And the appeal isn&rsquo;t empty: physical instantiation is real evidence that a structure isn&rsquo;t arbitrary, that reality already did some of the selecting for us. But look at what that actually buys you. Physics constrains <em>which</em> structures matter; it couldn&rsquo;t care less <em>how</em> you present them. To physics, \(B\), its rival \(B&rsquo;\), and the one nobody bothered to pick are the same object. It&rsquo;ll take any of the equivalent presentations and never ask why you built this one and not that. So &ldquo;it shows up in physics&rdquo; answers a real question, is this structure worth caring about, but not the one that keeps me up at night: why this representation, and not another. That&rsquo;s the sense in which physics is an epistemological whore for math: it will underwrite any representation you like, and so it can never justify the one you actually need justified.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>How to Bootstrap Mathematics - Pt1</title>
       <link>https://theconsciouspasticcio.github.io/posts/bootstrap-math-take3--pt1/</link>
       <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://theconsciouspasticcio.github.io/posts/bootstrap-math-take3--pt1/</guid>
       <description>&lt;p&gt;Epistemic status: unhinged, mostly subjective, yet fun.&lt;/p&gt;
 &lt;hr&gt;
@@ -59,26 +115,26 @@
 <p>We&rsquo;ve specified how truth ought to behave. We didn&rsquo;t implement it yet. Truth will be instantiated in different forms at different levels: as &ldquo;Membership&rdquo; in Set Theory, as &ldquo;Satisfaction&rdquo; in model theory, as &ldquo;Provability&rdquo; in formal systems. For now, we need only the promise that such a bridge can be built.</p>
 <p>What we&rsquo;re constructing mirrors the stack of computational abstraction:</p>
 <table>
-  <thead>
-      <tr>
-          <th>Mathematical Layer</th>
-          <th>Computational Analog</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Propositional logic</td>
-          <td>Machine code</td>
-      </tr>
-      <tr>
-          <td>Predicate logic</td>
-          <td>Assembly language</td>
-      </tr>
-      <tr>
-          <td>Set theory</td>
-          <td>Higher-level language</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Mathematical Layer</th>
+					<th>Computational Analog</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Propositional logic</td>
+					<td>Machine code</td>
+			</tr>
+			<tr>
+					<td>Predicate logic</td>
+					<td>Assembly language</td>
+			</tr>
+			<tr>
+					<td>Set theory</td>
+					<td>Higher-level language</td>
+			</tr>
+	</tbody>
 </table>
 <p>Each layer provides the primitives for the next. Each makes possible what was previously inexpressible.</p>
 <p>We begin with the atoms.</p>
@@ -322,7 +378,6 @@
       <title>Human Mathematics</title>
       <link>https://theconsciouspasticcio.github.io/posts/epimath-take5--final/</link>
       <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
-      
       <guid>https://theconsciouspasticcio.github.io/posts/epimath-take5--final/</guid>
       <description>&lt;p&gt;Epistemic status: High confidence from pattern recognition across many conversations. Both math-phobia (&amp;ldquo;I&amp;rsquo;m just not a math person&amp;rdquo;) and math-smugness (&amp;ldquo;I&amp;rsquo;m naturally gifted&amp;rdquo;) are illusions—&amp;ndash;opposite reactions to dumb teaching procedures.&lt;/p&gt;
 &lt;hr&gt;
